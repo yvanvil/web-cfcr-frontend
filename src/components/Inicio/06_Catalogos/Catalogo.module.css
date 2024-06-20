@@ -1,0 +1,39 @@
+.catalogue {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 60px;
+  font-size: 25px; 
+  font-weight: 800;
+  line-height: 30px;
+}
+
+.catalogue img {
+  padding-bottom: 35px;
+}
+
+.catalogue button {
+  border: 3px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: white;
+  font-family: inherit;
+  font-size: 15px; 
+  font-weight: 700;
+  padding: 7px 0;
+  cursor: pointer;
+  width: 70%;
+}
+
+.catalogue button:hover {
+  border: 3px solid var(--primary-color);
+  background-color: white;
+  color: var(--primary-color);
+}

@@ -1,0 +1,54 @@
+.featuredProduct {
+  border-radius: 25px;
+  border: 2px solid var(--primary-color);
+  padding: 50px 25px;
+  width: 250px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+}
+
+.brand {
+  font-size: 16px; 
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.name {
+  font-size: 20px; 
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 12px; 
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 12px;
+}
+
+.certifications {
+  font-size: 12px; 
+  font-weight: 700;
+  font-style: italic;
+  margin: 10px 0 20px 0;
+}
+
+.featuredProduct button {
+  border-style: none;
+  background-color: var(--primary-color);
+  color: white;
+  font-family: inherit;
+  font-size: 15px; 
+  font-weight: 700;
+  padding: 7px 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+.featuredProduct button:hover {
+  background-color: white;
+  color: var(--primary-color);
+}

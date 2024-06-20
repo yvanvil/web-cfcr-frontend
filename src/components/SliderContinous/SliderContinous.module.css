@@ -1,0 +1,49 @@
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.container::before, .container::after {
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.container::before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255,255,255,0), white);
+}
+
+.container::after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255,255,255,0), white);
+}
+
+.container:hover .slider {
+  animation-play-state: paused;
+}
+
+.slider {
+  display: inline-block;
+  animation: 15s slide infinite linear;
+  height: 100%;
+}
+
+.slider img {
+  margin: 0 20px;
+}
